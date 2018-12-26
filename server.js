@@ -54,16 +54,9 @@ app.get('/about', (req, res) => {
     });
 });
 
-app.get('/maintence', (req, res) => {
-    res.render('maintence.hbs', {
-        pageTitle: 'MainTense Page',
-        wellcomeMessage: 'Wellcome to the Maintage Page'
-    })
-})
-
-app.get('/baltimore', (req, res) => {
-    res.render('baltimore.hbs', {
-        pageTitle: 'Baltimore Page',
-        wellcomeMessage: 'Wellcome to the Baltimore Page'
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        bodyPage: "Project body"
     })
 })
