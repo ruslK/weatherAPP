@@ -61,3 +61,9 @@ app.get('/maintence', (req, res) => {
     })
 })
 
+app.get('/baltimore', (req, res) => {
+    res.render('baltimore.hbs', {
+        pageTitle: 'Baltimore Page',
+        wellcomeMessage: 'Wellcome to the Baltimore Page'
+    })
+})
